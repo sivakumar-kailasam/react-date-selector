@@ -1,8 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
-import App from './App'
+import DatePicker from './DatePicker'
 
 it('renders without crashing', () => {
-  renderer.create(<App />).toJSON()
+  renderer.create(<DatePicker />).toJSON()
 })
