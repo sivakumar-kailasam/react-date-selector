@@ -6,6 +6,7 @@
   "scripts": {
     "build": "react-app-rewired build",
     "precommit": "lint-staged",
+    "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "flow": "flow",
     "flow-typed": "flow-typed install --overwrite",
@@ -35,6 +36,13 @@
     "lint-staged": "6.0.0",
     "prettier": "1.9.2",
     "react-app-rewire-styled-components": "3.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/index.js"
+    ]
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
