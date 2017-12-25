@@ -1,0 +1,13 @@
+{
+    "eslint.autoFixOnSave": true,
+    "eslint.enable": true,
+    "[javascript]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": true
+    },
+    "flow.useNPMPackagedFlow": true,
+    "flow.runOnAllFiles": true,
+    "stylelint.enable": true,
+    "css.validate": false,
+    "scss.validate": false
+}
