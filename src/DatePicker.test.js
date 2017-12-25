@@ -4,5 +4,7 @@ import 'jest-styled-components'
 import DatePicker from './DatePicker'
 
 it('renders without crashing', () => {
-  renderer.create(<DatePicker />).toJSON()
+  const tree = renderer.create(<DatePicker />).toJSON()
+  expect(tree).toMatchSnapshot()
+  expect(tree).toBeTruthy()
 })
