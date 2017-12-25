@@ -6,24 +6,34 @@
     "build": "react-app-rewired build",
     "precommit": "lint-staged",
     "eject": "react-scripts eject",
+    "lint:js": "eslint './src/**/*.js'",
+    "lint:css": "stylelint './src/**/*.js'",
     "start": "react-app-rewired start",
     "test": "react-app-rewired test --env=jsdom"
   },
   "dependencies": {
+    "jest-styled-components": "4.9.0",
     "react": "^16.2.0",
     "react-app-rewired": "1.4.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "16.2.0",
+    "styled-components": "2.4.0",
+    "stylelint": "8.4.0",
+    "stylelint-config-standard": "18.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.2.1"
   },
   "devDependencies": {
     "eslint-plugin-jest": "21.5.0",
     "husky": "0.14.3",
     "lint-staged": "6.0.0",
-    "prettier": "1.9.2"
+    "prettier": "1.9.2",
+    "react-app-rewire-styled-components": "3.0.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css,md}": [
-      "prettier --single-quote --write",
+      "prettier --write",
       "git add"
     ]
   }
