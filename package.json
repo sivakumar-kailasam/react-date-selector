@@ -2,6 +2,7 @@
   "name": "react-date-selector",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sivakumar-kailasam.github.io/react-date-selector",
   "scripts": {
     "build": "react-app-rewired build",
     "precommit": "lint-staged",
